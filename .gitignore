@@ -1,0 +1,42 @@
+# ---- build artifacts ----
+/build/
+*.o
+*.obj
+*.trace
+.cache/
+
+# ---- CMake/CTest transient output ----
+/Testing/
+
+# ---- EEPROM dumps (contain immobilizer data — never commit) ----
+*.bin
+*.bin.bak
+
+# ---- proprietary original binary (never redistribute) ----
+/ME7EEPROM.exe
+/tmp/
+
+# ---- reverse-engineering scratch / intermediate artifacts ----
+/re/ghidra_out/
+/re/ghidra_out_*/
+/re/ghidra_proj/
+/re/ghidra_proj_*/
+/re/NOTES-*.md
+/PLAN.md
+/re/extract_firmware.py
+/re/firmware/
+/re/scripts/ghidra_dump.py
+/re/scripts/me7_merge.py
+/re/scripts/GhidraDump.java
+/re/scripts/ecu_sim.py
+/re/scripts/serial_capture.py
+/re/scripts/serial_server.py
+/re/scripts/tcp_capture.py
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- editor / OS ----
+.claude/
+.DS_Store
